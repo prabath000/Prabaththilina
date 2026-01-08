@@ -228,6 +228,58 @@ body.light-mode {
     --color-loader-light: rgba(0,0,0,0.1);
 }
 
+/* Additional Light Mode Overrides for Specific Components */
+body.light-mode .text-pretitle {
+    color: var(--color-text-dark);
+}
+
+body.light-mode .mailtoui-modal {
+    --mailtoui-modal-head-bgcolor       : #e0e0e0;
+    --mailtoui-modal-head-title-color   : #000000;
+    --mailtoui-modal-body-bgcolor       : #ffffff;
+    --mailtoui-button-bgcolor           : rgba(0, 0, 0, .05);
+    --mailtoui-button-text-color        : #000000;
+    --mailtoui-email-address-bgcolor    : #f0f0f0;
+    --mailtoui-email-address-text-color : #000000;
+    color                               : #000000;
+}
+
+body.light-mode .mailtoui-modal-close {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+body.light-mode .mailtoui-modal-close:hover,
+body.light-mode .mailtoui-modal-close:focus {
+    color: #000000;
+}
+
+body.light-mode .mailtoui-brand a {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+body.light-mode .mailtoui-brand a:hover,
+body.light-mode .mailtoui-brand a:focus {
+    color: #000000;
+}
+
+body.light-mode .main-nav a:hover,
+body.light-mode .main-nav a:focus {
+    color: #000000;
+}
+
+body.light-mode .modal-popup__details:hover,
+body.light-mode .modal-popup__details:focus {
+    color: #000000;
+}
+
+body.light-mode .testimonial-slider__cite strong {
+    color: #000000;
+}
+
+body.light-mode .testimonial-slider__slide:hover .testimonial-slider__cite span {
+    color: #000000;
+}
+
 /* ------------------------------------------------------------------- 
  * ## spacing and typescale
  * ------------------------------------------------------------------- */
@@ -4098,72 +4150,43 @@ body.light-mode .item-folio__thumb {
 .s-contact {
     padding-top: calc(var(--vspace-4) + var(--header-height));
     padding-bottom: var(--vspace-4);
-    background-color: #FAF9F6;
-    color: #4a4a4a;
+    background-color: #0c0c0c; /* Dark background */
+    color: #ffffff;
     min-height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 
-.s-contact .row {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center; /* Vertically center content */
+/* Add a background texture overlay if needed, similar to screenshot */
+.s-contact::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/contact-bg.jpg); /* Assuming we might have one, or just dark color */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1;
 }
 
-.contact-left-col {
-    padding-right: 4rem;
-}
-
-.contact-right-col {
-    padding-left: 2rem;
-}
-
-.contact-title {
-    font-family: var(--font-2);
-    font-size: 4.5rem;
-    color: #8B4513; /* SaddleBrown */
-    margin-bottom: 1rem;
-    line-height: 1.1;
-}
-
-.contact-subtitle {
-    font-family: var(--font-2);
-    font-size: 2rem;
-    color: #A0522D; /* Sienna */
-    font-style: italic;
-    margin-bottom: 2rem;
-}
-
-.contact-desc {
-    font-family: var(--font-1);
-    font-size: 1.6rem;
-    line-height: 1.6;
-    color: #4a4a4a;
-    margin-bottom: 3rem;
-    max-width: 400px;
-}
-
-.contact-info-new {
-    margin-top: 2rem;
-}
-
-.contact-email-new {
-    display: flex;
-    align-items: center;
+.s-contact .text-pretitle {
+    color: #ffffff;
+    font-size: 3.6rem;
+    font-weight: 700;
     margin-bottom: 1.5rem;
+}
+
+.s-contact .contact-desc {
+    color: rgba(255, 255, 255, 0.7);
     font-size: 1.6rem;
-}
-
-.contact-email-new .icon {
-    font-size: 2rem;
-    margin-right: 1.5rem;
-    color: #4a4a4a;
-}
-
-.contact-email-new a {
-    color: #4a4a4a;
-    text-decoration: underline;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    max-width: 450px;
 }
 
 .contact-social-new {
@@ -4171,106 +4194,81 @@ body.light-mode .item-folio__thumb {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .contact-social-new li a {
-    color: #4a4a4a;
-    font-size: 2rem;
-    transition: color 0.3s;
+    color: #3b82f6; /* Blue color like screenshot */
+    font-size: 2.4rem;
+    transition: all 0.3s;
 }
 
 .contact-social-new li a:hover {
-    color: #8B4513;
+    color: #ffffff;
+    transform: translateY(-3px);
 }
 
-/* Form Styles */
-.contact-form-new {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+/* Form Card Styles */
+.contact-form-card {
+    background-color: #1a1a1a;
+    padding: 4rem;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.form-row-new {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.form-group-new {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.form-group-new label {
-    font-size: 1.4rem;
-    color: #4a4a4a;
+.contact-form-card h3 {
+    color: #ffffff;
+    font-size: 2.8rem;
     margin-bottom: 0.5rem;
-    font-weight: 500;
+    margin-top: 0;
 }
 
-.form-group-new input,
-.form-group-new textarea {
+.contact-form-card p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.contact-form-card .form-field {
+    margin-bottom: 2rem;
+}
+
+.contact-form-card input,
+.contact-form-card textarea {
     width: 100%;
-    padding: 1.2rem;
-    background: transparent;
-    border: 1px solid #8c8c8c;
-    border-radius: 0; /* Square edges as per image */
-    font-family: var(--font-1);
-    font-size: 1.6rem;
-    color: #333;
+    background-color: #262626;
+    border: 1px solid #333;
+    color: #ffffff;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    transition: all 0.3s;
 }
 
-.form-group-new input:focus,
-.form-group-new textarea:focus {
+.contact-form-card input:focus,
+.contact-form-card textarea:focus {
+    background-color: #333;
+    border-color: #3b82f6;
     outline: none;
-    border-color: #8B4513;
 }
 
-.submit-btn-new {
-    background-color: #A0522D; /* Match the brown button */
-    color: white;
-    border: none;
-    padding: 1.2rem 3rem;
-    font-size: 1.6rem;
-    font-weight: 500;
-    cursor: pointer;
-    align-self: flex-end; /* Right align button */
-    transition: background-color 0.3s;
+.contact-form-card .btn--primary {
+    background-color: #10b981; /* Green button */
+    border-color: #10b981;
+    color: #ffffff;
+    width: 100%;
     margin-top: 1rem;
 }
 
-.submit-btn-new:hover {
-    background-color: #8B4513;
+.contact-form-card .btn--primary:hover {
+    background-color: #059669;
+    border-color: #059669;
 }
 
 @media screen and (max-width: 800px) {
-    .s-contact .row {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .contact-left-col {
-        padding-right: 0;
-        margin-bottom: 4rem;
-    }
-    
-    .contact-right-col {
-        padding-left: 0;
-        width: 100%;
-    }
-
-    .contact-title {
-        font-size: 3.5rem;
-    }
-    
-    .form-row-new {
-        flex-direction: column;
-        gap: 0;
-    }
-    
-    .form-group-new {
-        margin-bottom: 1.5rem;
+    .contact-form-card {
+        padding: 2rem;
+        margin-top: 3rem;
     }
 }
 
