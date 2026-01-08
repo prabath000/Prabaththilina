@@ -1,0 +1,12 @@
+{
+  "name": "web03-portfolio",
+  "version": "1.0.0",
+  "description": "Static portfolio website converted from Java Spring Boot",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [],
+  "author": "Prabath",
+  "license": "ISC"
+}
