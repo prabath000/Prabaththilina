@@ -267,7 +267,10 @@
                         <h3 class="h2">Contact Us</h3>
                         <p>We will get back to you in 24 hours</p>
                         
-                        <form name="contactForm" id="contactForm" method="post">
+                        <form name="contactForm" id="contactForm" action="https://formsubmit.co/prathilina00000@gmail.com" method="POST">
+                            <input type="hidden" name="_next" value="https://prabath000.github.io/Prabaththilina/#contact">
+                            <input type="hidden" name="_subject" value="New Contact Form Submission">
+                            <input type="hidden" name="_captcha" value="false">
                             <fieldset>
                                 <div class="form-field">
                                     <input name="firstName" type="text" id="firstName" class="full-width" placeholder="First Name" value="">
@@ -544,7 +547,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             loadProjects();
 
-            // Handle contact form submission for static site
+            // Handle contact form submission using FormSubmit service
             const contactForm = document.getElementById('contactForm');
             if (contactForm) {
                 contactForm.addEventListener('submit', async function(e) {
@@ -556,48 +559,22 @@
                     submitBtn.disabled = true;
                     
                     const formData = new FormData(contactForm);
-                    const data = Object.fromEntries(formData.entries());
-                    
-                    // Try to detect server URL
-                    const getApiUrl = () => {
-                        // Check if we're on localhost
-                        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                            return `http://localhost:5000/api/contacts`;
-                        }
-                        return '/api/contacts';
-                    };
                     
                     try {
-                        const apiUrl = getApiUrl();
-                        console.log('Submitting form to:', apiUrl);
-                        
-                        const response = await fetch(apiUrl, {
+                        const response = await fetch(contactForm.action, {
                             method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json'
-                            },
-                            body: JSON.stringify(data)
+                            body: formData
                         });
                         
-                        const result = await response.json();
-                        console.log('Server response:', result);
-                        
-                        if (result.success) {
+                        if (response.ok) {
                             alert('Thank you for your message! We will get back to you soon.');
                             contactForm.reset();
                         } else {
-                            alert('Error: ' + (result.message || 'Unknown error'));
+                            alert('Failed to submit form. Please try again later or contact us directly at prathilina00000@gmail.com');
                         }
                     } catch (error) {
                         console.error('Error submitting form:', error);
-                        
-                        // Provide more helpful error message
-                        const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-                        if (isLocalhost) {
-                            alert('Cannot connect to server. Make sure the server is running on port 5000.\n\nTo start the server:\n1. Open a terminal in the server folder\n2. Run: npm start\n\nThen refresh this page and try again.');
-                        } else {
-                            alert('Failed to submit form. Please try again later or contact us directly at prathilina00000@gmail.com');
-                        }
+                        alert('Failed to submit form. Please try again later or contact us directly at prathilina00000@gmail.com');
                     } finally {
                         submitBtn.textContent = originalText;
                         submitBtn.disabled = false;
