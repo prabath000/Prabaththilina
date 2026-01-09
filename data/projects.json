@@ -10,5 +10,18 @@
     "image3": "images/GarGO/Screenshot 2025-12-23 150103.png",
     "image4": "images/GarGO/Screenshot 2025-12-23 150120.png",
     "image5": "images/GarGO/Screenshot 2025-12-23 150139.png"
+  },
+
+  {
+    "id": 2,
+    "title": "AMH E-Commerce ",
+    "description": "I built AMH, a modern full-stack e-commerce platform for a clothing store as a hands-on learning project to strengthen my backend and full-stack development skills.\n\nThe application is developed using Java 17, Spring Boot 3.2.0, Spring Security, MySQL, and Thymeleaf, following clean code principles and a layered architecture.\n\nKey features include secure user authentication with BCrypt, role-based access control, a dynamic product catalog with filtering, shopping cart functionality, order tracking, and a powerful admin dashboard for managing products, orders, and users. The UI is fully mobile-responsive, focusing on usability and performance.\n\nThis project helped me gain practical experience in Spring Security, database design, RESTful development, and building real-world web applications end-to-end.\n\nTech Stack:\nJava 17 | Spring Boot | Spring Security | MySQL | Thymeleaf | HTML | CSS | JavaScript.",
+    "status": "uploaded",
+    "githubUrl": "https://github.com/prabath000/AMH.git",
+    "image": "images/AMH/Screenshot 2026-01-29 233223.png",
+    "image2": "images/AMH/Screenshot 2026-01-29 233302.png",
+    "image3": "images/AMH/Screenshot 2026-01-29 233618.png",
+    "image4": "images/AMH/Screenshot 2026-01-29 233639.png",
+    "image5": "images/AMH/Screenshot 2026-01-29 233718.png"
   }
 ]
