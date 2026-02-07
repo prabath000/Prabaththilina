@@ -23,5 +23,18 @@
     "image3": "images/AMH/Screenshot 2026-01-29 233618.png",
     "image4": "images/AMH/Screenshot 2026-01-29 233639.png",
     "image5": "images/AMH/Screenshot 2026-01-29 233718.png"
+  },
+
+  {
+    "id": 3,
+    "title": "Smart Fitness Calorie Burn Predictor ",
+    "description": "I built a Machine Learning web application that predicts calorie burn during workouts!.This project was created for learning purposes and helped me explore:✅ Training ML models (Random Forest)✅ Flask web development ✅ Data visualization with Chart.js ✅ Modern UI/UX design ✅ REST API developmentThe app has two modes:\uD83D\uDD39 Predict Mode - Real-time calorie predictions\uD83D\uDD39 Analyst Mode - Interactive dashboard with charts & statistics #MachineLearning #Python #Flask #DataScience #WebDevelopment #LearningJourney",
+    "status": "uploaded",
+    "githubUrl": "https://github.com/prabath000/MLPROJECT.git",
+    "image": "images/ML/Screenshot 2026-02-07 220519.png",
+    "image2": "images/ML/Screenshot 2026-02-07 220619.png",
+    "image3": "images/ML/Screenshot 2026-02-07 220652.png",
+    "image4": "images/ML/Screenshot 2026-02-07 220712.png",
+    "image5": "images/ML/Screenshot 2026-02-07 220734.png"
   }
 ]
