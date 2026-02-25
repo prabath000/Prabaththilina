@@ -1,6 +1,20 @@
 [
   {
-    "id": 1,
+    "id":1,
+    "title": "Financial Management System",
+    "description": "A robust, offline-first Desktop ERP and Financial Management System built for **Janka Agency**. This system streamlines financial tracking, inventory management, and business analytics.\n\n## \uD83D\uDE80 Key Features\n- **Interactive Dashboard**: Real-time sales analytics with yearly and monthly views.\n- **Inventory Tracking**: Manage products, stock levels, and automated low-stock alerts.\n- **Financial Ledger**: Record daily income, expenses, and track net profit over time.\n- **Customer Credit Management**: Track outstanding balances and payment statuses for credit clients.\n- **PDF Report Generation**: Generate professional, detailed monthly business reports with a single click.\n- **Offline Reliability**: Packaged as a Windows desktop application using Electron and SQLite.\n\n## \uD83D\uDEE0\uFE0F Tech Stack\n- **Frontend**: React, Tailwind CSS, Chart.js, Lucide Icons\n- **Backend**: Node.js, Express.js\n- **Database**: SQLite (better-sqlite3)\n- **Desktop**: Electron.js\n- **PDF Engine**: jsPDF & AutoTable",
+    "status": "uploaded",
+    "githubUrl": "https://github.com/prabath000/Financial_Management_System.git",
+    "image": "images/FMS/Screenshot 2026-02-17 231204.png",
+    "image2": "images/FMS/Screenshot 2026-02-17 231224.png",
+    "image3": "images/FMS/Screenshot 2026-02-17 231244.png",
+    "image4": "images/FMS/Screenshot 2026-02-17 231311.png",
+    "image5": "images/FMS/Screenshot 2026-02-17 231257.png",
+    "image6": "images/FMS/Screenshot 2026-02-17 231333.png"
+  },
+
+  {
+    "id":2,
     "title": "CarGo",
     "description": "A modern car rental web application that allows users to browse, compare, and book rental cars online. Features include real-time availability, easy booking management, and a user-friendly interface.",
     "status": "uploaded",
@@ -13,7 +27,7 @@
   },
 
   {
-    "id": 2,
+    "id":3,
     "title": "AMH E-Commerce ",
     "description": "I built AMH, a modern full-stack e-commerce platform for a clothing store as a hands-on learning project to strengthen my backend and full-stack development skills.\n\nThe application is developed using Java 17, Spring Boot 3.2.0, Spring Security, MySQL, and Thymeleaf, following clean code principles and a layered architecture.\n\nKey features include secure user authentication with BCrypt, role-based access control, a dynamic product catalog with filtering, shopping cart functionality, order tracking, and a powerful admin dashboard for managing products, orders, and users. The UI is fully mobile-responsive, focusing on usability and performance.\n\nThis project helped me gain practical experience in Spring Security, database design, RESTful development, and building real-world web applications end-to-end.\n\nTech Stack:\nJava 17 | Spring Boot | Spring Security | MySQL | Thymeleaf | HTML | CSS | JavaScript.",
     "status": "uploaded",
@@ -26,7 +40,7 @@
   },
 
   {
-    "id": 3,
+    "id": 4,
     "title": "Smart Fitness Calorie Burn Predictor ",
     "description": "I built a Machine Learning web application that predicts calorie burn during workouts!.This project was created for learning purposes and helped me explore:✅ Training ML models (Random Forest)✅ Flask web development ✅ Data visualization with Chart.js ✅ Modern UI/UX design ✅ REST API developmentThe app has two modes:\uD83D\uDD39 Predict Mode - Real-time calorie predictions\uD83D\uDD39 Analyst Mode - Interactive dashboard with charts & statistics #MachineLearning #Python #Flask #DataScience #WebDevelopment #LearningJourney",
     "status": "uploaded",
