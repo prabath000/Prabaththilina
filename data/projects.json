@@ -1,6 +1,15 @@
 [
   {
     "id":1,
+    "title": "DELOX – Task Management Application (Flutter)",
+    "description": "I developed DELOX, a minimalist and high-performance task management application built using Flutter and Dart. This is my first Flutter project, created for personal productivity while learning modern mobile app development.",
+    "status": "uploaded",
+    "githubUrl": "https://github.com/prabath000/delox_d.git",
+    "image": "images/Mobile/done.png"
+  },
+
+  {
+    "id":2,
     "title": "Financial Management System",
     "description": "A robust, offline-first Desktop ERP and Financial Management System built for Janka Agency . This system streamlines financial tracking, inventory management, and business analytics.",
     "status": "uploaded",
@@ -14,7 +23,7 @@
   },
 
   {
-    "id":2,
+    "id":3,
     "title": "CarGo",
     "description": "A modern car rental web application that allows users to browse, compare, and book rental cars online. Features include real-time availability, easy booking management, and a user-friendly interface.",
     "status": "uploaded",
@@ -27,7 +36,7 @@
   },
 
   {
-    "id":3,
+    "id":4,
     "title": "AMH E-Commerce ",
     "description": "I built AMH, a modern full-stack e-commerce platform for a clothing store as a hands-on learning project to strengthen my backend and full-stack development skills.",
     "status": "uploaded",
@@ -40,7 +49,7 @@
   },
 
   {
-    "id": 4,
+    "id":5,
     "title": "Smart Fitness Calorie Burn Predictor ",
     "description": "I built a Machine Learning web application that predicts calorie burn during workouts!.This project was created for learning purposes and helped me explore: Training ML models (Random Forest), Flask web development , Data visualization with Chart.js , Modern UI/UX design and REST API developmentThe app has two modes:\uD83D\uDD39 Predict Mode - Real-time calorie predictions\uD83D\uDD39 Analyst Mode - Interactive dashboard with charts & statistics #MachineLearning #Python #Flask #DataScience #WebDevelopment #LearningJourney",
     "status": "uploaded",
